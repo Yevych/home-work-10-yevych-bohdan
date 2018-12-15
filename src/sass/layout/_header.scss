@@ -1,0 +1,128 @@
+// Header
+header {
+  @include respond-to('extra-small') {
+    background: $theme-color;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    &.header-nav-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @include respond-to('small') {
+    flex-direction: row;
+    &.header-nav-list {
+      flex-direction: row;
+    }
+  }
+  .nav-list {
+    @include respond-to('extra-small') {
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      & li {
+        display: inline-block;
+        margin-bottom: 10px;
+        text-align: center;
+        a {
+          position: relative;
+          padding: 0 10px;
+          color: $main-light-color;
+          font-family: $text-font;
+          font-size: 13px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+    @include respond-to('large') {
+      ul {
+        flex-direction: row;
+      }
+      & li {
+        margin-bottom: 0;
+        margin-left: 18px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          &:before {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: $main-light-color;
+            opacity: 0.8;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: none;
+          }
+          &:hover:before {
+            display: inline-block;
+            transition: .3s all;
+          }
+        }
+      }
+    }
+  }
+}
+
+.social-list {
+  @include respond-to('extra-small') {
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    & li {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      margin-bottom: 10px;
+      a {
+        text-transform: uppercase;
+        & .social-icon {
+          color: $main-light-color;
+          font-size: 24px;
+        }
+      }
+    }
+    &__number {
+      color: $main-light-color;
+      font-family: $text-font;
+      font-size: 14px;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+  @include respond-to('large') {
+    ul {
+      flex-direction: row;
+      align-items: center;
+      & li {
+        display: inline-block;
+        margin-left: 35px;
+        vertical-align: middle;
+        margin-bottom: 0;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.header-logo {
+  margin: 10px 0;
+  @include respond-to('large') {
+    margin: 0;
+  }
+}
