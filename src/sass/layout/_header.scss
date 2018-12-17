@@ -13,11 +13,17 @@ header {
       align-items: center;
       flex-direction: column;
     }
+    .header-logo {
+      order: -1;
+    }
   }
   @include respond-to('small') {
     flex-direction: row;
     &.header-nav-list {
       flex-direction: row;
+    }
+    .header-logo {
+      order: 0;
     }
   }
   .nav-list {

@@ -104,6 +104,7 @@
       height: 80px;
       overflow: hidden;
       background-color: $theme-color;
+      transition: .3s all ease;
       & .social-list {
         padding: 0 30px 15px;
         & li {
