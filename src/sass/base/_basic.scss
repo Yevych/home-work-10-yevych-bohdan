@@ -26,6 +26,15 @@ img {
   height: auto;
 }
 
+body.open-menu {
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+.open-menu .page-header .main-nav-list {
+  transform: translateX(0);
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
