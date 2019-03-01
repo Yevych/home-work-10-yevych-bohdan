@@ -106,9 +106,21 @@
       background-color: $theme-color;
       transition: .3s all ease;
       & .social-list {
+        display: flex;
         padding: 0 30px 15px;
         & li {
           margin-right: 15px;
+          .social-icon {
+            color: $main-light-color;
+            font-size: 24px;
+          }
+        }
+        &__number {
+          color: $main-light-color;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          margin-left: 10px;
         }
       }
       &__name {
