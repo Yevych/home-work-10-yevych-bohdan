@@ -39,8 +39,18 @@ $('.introducing-items').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: '<button class="introducing__slider__btn introducing__slider__prev-btn"><div class="prev-arrow"></div></button>',
-        nextArrow: '<button class="introducing__slider__btn introducing__slider__next-btn"><div class="next-arrow"></div></button>'
+        nextArrow: '<button class="introducing__slider__btn introducing__slider__next-btn"><div class="next-arrow"></div></button>',
       }
     }
   ]
+})
+
+$('.video-slider').slick({
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow: '<button class="video__slider__btn video__slider__prev-btn"><div class="prev-arrow"></div></button>',
+  nextArrow: '<button class="video__slider__btn video__slider__next-btn"><div class="next-arrow"></div></button>'
 })

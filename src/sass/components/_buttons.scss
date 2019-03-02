@@ -33,7 +33,7 @@
 
 //Slider btn
 
-.introducing__slider {
+.introducing__slider, .video__slider {
   &__btn {
     position: absolute;
     z-index: 1;
@@ -75,5 +75,17 @@
       border-top: 2px solid $main-light-color;
       transform: rotate(45deg);
     }
+  }
+}
+
+.video__slider {
+  &__btn {
+    top: -40px;
+  }
+  &__prev-btn {
+    right: 40px;
+  }
+  &__next-btn {
+    right: 0;
   }
 }
