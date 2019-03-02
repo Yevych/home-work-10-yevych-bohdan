@@ -26,6 +26,10 @@ img {
   height: auto;
 }
 
+button {
+  outline: none;
+}
+
 body.open-menu {
   overflow-y: hidden;
   height: 100vh;

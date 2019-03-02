@@ -14,7 +14,6 @@ header.page-header {
     position: absolute;
     top: 15px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: 15;
 
@@ -53,7 +52,6 @@ header.page-header {
       z-index: 10;
       flex-direction: column;
       justify-content: center;
-      -webkit-transition: .4s;
       transition: .4s;
       transform: translateX(-110%);
     }

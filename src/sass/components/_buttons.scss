@@ -30,3 +30,50 @@
     transition: .3s all;
   }
 }
+
+//Slider btn
+
+.introducing__slider {
+  &__btn {
+    position: absolute;
+    z-index: 1;
+    top: -55px;
+    padding: 10px;
+    background: $theme-color;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $main-light-color;
+      border: 2px solid $theme-color;
+      transition: .3s all;
+      & .prev-arrow, & .next-arrow {
+        border-right: 2px solid $theme-color;
+        border-top: 2px solid $theme-color;
+      }
+    }
+  }
+  &__prev-btn {
+    right: 55px;
+    border: 2px solid transparent;
+    .prev-arrow {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid $main-light-color;
+      border-top: 2px solid $main-light-color;
+      transform: rotate(-135deg);
+    }
+  }
+  &__next-btn {
+    right: 15px;
+    border: 2px solid transparent;
+    .next-arrow {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-right: 2px solid $main-light-color;
+      border-top: 2px solid $main-light-color;
+      transform: rotate(45deg);
+    }
+  }
+}

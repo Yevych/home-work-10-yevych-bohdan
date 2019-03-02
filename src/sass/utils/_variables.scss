@@ -16,6 +16,7 @@ $line-newsletter-color: #999999;
 
 $breakpoints: (
   'extra-small': (min-width: 320px),
+  'medium-small': (min-width: 480px),
   'small': (min-width: 768px),
   'max-small': (max-width: 768px),
   'medium': (min-width: 992px),

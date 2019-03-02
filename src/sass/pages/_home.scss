@@ -75,25 +75,20 @@
     padding: 50px 0;
     border-bottom: 1px solid #dfdfdf;
     &-items {
+      margin: 15px -15px 0 -15px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: nowrap;
       justify-content: space-between;
       align-items: stretch;
-      overflow-x: auto;
     }
     &-item {
-      flex: 0 0 auto;
       position: relative;
-      margin: 10px 10px 0;
-      &:first-child {
-        margin-left: 0;
-      }
-      &:last-child {
-        margin-right: 0;
-      }
+      margin: 15px 15px 0 15px;
+      outline: none;
     }
     img {
+      width: 100%;
       vertical-align: middle;
     }
     .member {
@@ -138,12 +133,25 @@
       }
     }
   }
-  @include respond-to('medium') {
+
+  @include respond-to('medium-small') {
     &-items {
-      overflow: hidden;
+      flex-direction: row;
+      flex-wrap: nowrap;
     }
     &-item {
-      flex: auto;
+      width: 50%;
+    }
+  }
+
+  @include respond-to('small') {
+    &-item {
+      width: 33%;
+    }
+  }
+
+  @include respond-to('medium') {
+    &-item {
       &:hover .member {
         height: 130px;
         display: block;
@@ -156,9 +164,6 @@
   }
   @include respond-to('large') {
     padding: 100px 0;
-    &-item {
-      margin: 10px 15px 0;
-    }
   }
 }
 
