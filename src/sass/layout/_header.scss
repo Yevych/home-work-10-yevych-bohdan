@@ -56,6 +56,16 @@ header.page-header {
       transform: translateX(-110%);
     }
 
+    @include respond-to('medium-small') {
+      flex-direction: row;
+      .menu-list {
+        margin-right: 15px;
+      }
+      .social-list {
+        margin-left: 15px;
+      }
+    }
+
   }
 
   .menu-list li {
